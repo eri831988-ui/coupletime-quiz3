@@ -1,11 +1,12 @@
-export const metadata = { title: "夫婦時間 診断ツール" };
+export const metadata = {
+  title: "夫婦時間 診断ツール",
+  description: "10問に答えるだけで、あなたに合った夫婦時間タイプを判定します。",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
