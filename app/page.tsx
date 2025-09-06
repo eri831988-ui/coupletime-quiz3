@@ -1,10 +1,10 @@
-import dynamic from "next/dynamic";
-const Quiz = dynamic(() => import("@/components/CoupleTimeQuiz"), { ssr: false });
+import CoupleTimeQuiz from "../components/CoupleTimeQuiz";
 
 export default function Page() {
   return (
-    <main className="mx-auto max-w-3xl p-6">
-      <Quiz />
+    <main>
+      <h1>夫婦時間おすすめ診断ツール</h1>
+      <CoupleTimeQuiz />
     </main>
   );
 }
